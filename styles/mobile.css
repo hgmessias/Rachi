@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --FirstColor: #EFF8FF;
+    --ButtonColor: #0F9AFE;
+    --TitleColor: #293145;
+    --ParagraColor: #6E7275;
+    --ParagraColor2: #DBDBDB;
+    --White: #FFFFFF;
+    --FontSora: Sora;
+    --FontInter: Inter;
+}
+
+@font-face{
+    font-family: Sora;
+    src: url(../assets/fonts/Sora/Sora-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(../assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
