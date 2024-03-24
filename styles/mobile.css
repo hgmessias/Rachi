@@ -1,0 +1,289 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --FirstColor: #EFF8FF;
+    --ButtonColor: #0F9AFE;
+    --TitleColor: #293145;
+    --ParagraColor: #6E7275;
+    --ParagraColor2: #DBDBDB;
+    --White: #FFFFFF;
+    --FontSora: Sora;
+    --FontInter: Inter;
+}
+
+header{
+display: flex;
+justify-content: space-between;
+}
+
+
+@font-face{
+    font-family: Sora;
+    src: url(../assets/fonts/Sora/Sora-VariableFont_wght.ttf);
+}
+
+
+@font-face {
+    font-family: Inter;
+    src: url(../assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+.inicio{
+    background-color: #EFF8FF;
+    width: 100%;
+    height: 395px;
+}
+
+.text1{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+.text1>button{
+    background-color: var(--ButtonColor);
+    width: 144px;
+    height: 32px;
+    border-radius: 16px;
+    border: none;
+    box-shadow: 2px 1px 10px var(--ParagraColor);
+    color: var(--White);
+    font-family: var(--FontInter);
+    font-size:14px;
+    font-weight: 500;
+}
+
+.text1>h1{
+    font-family: var(--FontSora);
+    font-size: 26px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    color: var(--TitleColor);
+}
+
+.image_tree{
+    width: 250px;
+    height: 230px;
+    margin-left: 65px;  
+}
+
+.text2{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text2>h1{
+    font-family: var(--FontSora);
+    color: var(--TitleColor);
+    font-size: 24px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+.text2>div{
+    margin-bottom: 50px;
+}
+
+.text2>div>h3{
+    font-family: var(--FontSora);
+    color: var(--TitleColor);
+    font-size: 1rem;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.text2>div>p{
+    font-family: var(--FontInter);
+    color: var(--ParagraColor);
+    font-size: 14px;
+}
+
+.text3{
+    background-color: var(--FirstColor);
+    width: 100%;
+    height: 259px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text3>div>h1{
+    font-family: var(--FontSora);
+    color: var(--TitleColor);
+    font-size: 24px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.text3>div>p{
+    font-family: var(--FontInter);
+    color: var(--ParagraColor);
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.text3>div>button{
+    border: var(--TitleColor);
+}
+
+.icon_css{
+    width: 170px;
+    height: 50px;
+    padding: 5px;
+}
+
+.text4{
+    background-color: var(--White);
+    width: 100%;
+    height: 1400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.text4>h1{
+    font-family: var(--FontSora);
+    font-size: 24px;
+    color: var(--TitleColor);
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.text4>p{
+    font-family: var(--FontInter);
+    color: var(--ParagraColor);
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.text4>div>button{
+    background-color: var(--ButtonColor);
+    width: 144px;
+    height: 32px;
+    border-radius: 16px;
+    border: none;
+    box-shadow: 2px 1px 10px var(--ParagraColor);
+    color: var(--White);
+    font-family: var(--FontInter);
+    font-size:14px;
+    font-weight: 500;
+}
+
+.text4>div>h2{
+    font-family: var(--FontSora);
+    font-size: 24px;
+    color: var(--TitleColor);
+}
+
+.text4>div>h3{
+    font-family: var(--FontSora);
+    font-size: 24px;
+    color: var(--White);
+}
+
+.text4>div{
+    background-color: var(--FirstColor);
+    border-radius: 8px;
+    height: 355px;
+    width: 312px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.text4>div>p{
+    font-family: var(--FontInter);
+    font-size: 1rem;
+    color: var(--ParagraColor);
+    text-align: center;
+}
+
+#silver{
+    background-color: var(--TitleColor);
+}
+
+#silver>p{
+    color: var(--White);
+}
+
+.text5{
+    background-image: url(../assets/images/Group\ 33554.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text5>h2{
+    font-family: var(--FontSora);
+    font-size: 24px;
+    color: var(--White);
+    margin-top: 30px;
+}
+
+.text5>p{
+    font-family: var(--FontInter);
+    font-size: 14px;
+    color: var(--ParagraColor2);
+    text-align: center;
+    padding: 20px;
+}
+
+.text5>h4{
+    font-family: var(--FontInter);
+    font-size: 14px;
+    color: var(--White);
+    margin-right: 218px;
+}
+
+.text5>button{
+    background-color: var(--ButtonColor);
+    width: 320px;
+    height: 37px;
+    border-radius: 16px;
+    border: none;
+    box-shadow: 2px 1px 10px var(--ParagraColor);
+    color: var(--White);
+    font-family: var(--FontInter);
+    font-size:14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+hr{
+    width: 335px;
+}
+
+.text6{
+    background-color: var(--White);
+    height: 60px;
+    width: 100%;
+    text-align: center;
+}
+.text6>h3{
+    font-family: var(--FontSora);
+    font-size: 14px;
+    color: var(--TitleColor);
+    padding: 20px;
+    font-weight: 500;
+}
