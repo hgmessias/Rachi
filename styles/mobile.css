@@ -99,11 +99,11 @@ header>img {
     margin-top: 40px;
 }
 
-.text2>div{
+.text2>section>div{
     margin-bottom: 50px;
 }
 
-.text2>div>h3{
+.text2>section>div>h3{
     font-family: var(--FontSora);
     color: var(--TitleColor);
     font-size: 1rem;
@@ -111,7 +111,7 @@ header>img {
     margin-top: 20px;
 }
 
-.text2>div>p{
+.text2>section>div>p{
     font-family: var(--FontInter);
     color: var(--ParagraColor);
     font-size: 14px;
@@ -126,7 +126,7 @@ header>img {
     flex-direction: column;
 }
 
-.text3>div>h1{
+.text3>section>div>h1{
     font-family: var(--FontSora);
     color: var(--TitleColor);
     font-size: 24px;
@@ -137,7 +137,7 @@ header>img {
     margin-bottom: 20px;
 }
 
-.text3>div>p{
+.text3>section>div>p{
     font-family: var(--FontInter);
     color: var(--ParagraColor);
     margin-left: 20px;
@@ -146,14 +146,18 @@ header>img {
     margin-bottom: 30px;
 }
 
-.text3>div>button{
-    border: var(--TitleColor);
+.text3>section>div>button{
+    border: none;
+}
+
+.text3>img{
+    display: none;
 }
 
 .icon_css{
     width: 170px;
     height: 50px;
-    padding: 5px;
+    margin-left: 16px;
 }
 
 .text4{
@@ -339,8 +343,69 @@ hr{
     display: none;
 }
 
-@media screen and  (max-width:1440px) {
-    /* .header-style__links{
+@media screen and  (orientation: landscape) {    
+    header{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 130px;
+        padding-right: 130px;
+        background-color: var(--White);
+    }
+
+    #handlerNavebar{
         display: none;
-    } */
+    }
+
+    .inicio{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 130px;
+        padding-right: 130px;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+
+    .image_tree{
+        width: 300px;
+        height: 300px;
+    }
+
+    .text2>section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 130px;
+        padding-right: 130px;
+    }
+
+    .text3>img{
+        display: inline;
+        width: 300px;
+        height: 300px;
+        border: 2px solid black;
+    }
+
+    .text3{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 130px;
+        padding-right: 130px;
+        height: 500px;
+        border: 2px solid black;
+    }
+
+    .text3>section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border: 2px solid black;
+    }
+
+
+    .text3>section>div>h1>br{
+        display: none;
+    }
+    
 }
