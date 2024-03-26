@@ -16,25 +16,37 @@
 }
 
 header{
-display: flex;
-justify-content: space-between;
+    width: 100vw;
+    height: 70px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    align-items: center;
+    padding: 5px;
 }
 
+header>img {
+    width: 130px;
+    height: 100%;
+    padding: 13px;
+}
 
 @font-face{
     font-family: Sora;
     src: url(../assets/fonts/Sora/Sora-VariableFont_wght.ttf);
 }
 
-
 @font-face {
     font-family: Inter;
     src: url(../assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
 }
+
 .inicio{
     background-color: #EFF8FF;
     width: 100%;
-    height: 395px;
+    height: 460px;
+    padding-top: 70px;
 }
 
 .text1{
@@ -286,4 +298,49 @@ hr{
     color: var(--TitleColor);
     padding: 20px;
     font-weight: 500;
+}
+
+#handlerNavebar {
+    display: block;
+    z-index: 999;
+    margin-right: 15px;
+}
+
+.header-style__links{
+    position: absolute;
+    display: block;
+    transform: translateX(100%);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 40%;
+    height: 30vw;
+    background-color: var(--White);
+    transition: .3s ease;
+}
+
+.open{
+    transform: translateX(0);
+}
+
+.header-style__links>ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--White);
+    margin-top: 50px;
+    gap: 30px 0;
+    padding: 7px;
+    font-family: var(--FontInter);
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and  (max-width:1440px) {
+    /* .header-style__links{
+        display: none;
+    } */
 }
